@@ -80,4 +80,4 @@ e-mail: master-cim@yandex.ru
 ```html
 https://github.com/master-cim
 ```
-![Svetlana Yu. Petrova](https://sun9-43.userapi.com/s/v1/ig2/eT-scxW0rREd_cOwwpR0429JIWz3owGZDDNaLQwbj2GhW906SRVCX3NHv3GqzPI6OeP0r7Nikgfk5q0QepB6aOjn.jpg?size=960x1280&quality=96&type=album "Svetlana Yu. Petrova")
+![Svetlana Yu. Petrova](https://vk.com/photo469987585_457239211?all=1 "Svetlana Yu. Petrova")
