@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -43,7 +44,7 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         post = get_object_or_404(Post, id=self.kwargs.get('post_id'))
-        return post.comments.all()
+        return Comment.objects.filter(post=post, parent_comm__isnull=True)
 
     def perform_create(self, serializer):
         serializer.save(
