@@ -52,3 +52,13 @@ class CommentViewSet(viewsets.ModelViewSet):
             post=get_object_or_404(Post, id=self.kwargs.get('post_id'))
         )
 
+
+class CommentTreeViewSet(viewsets.ModelViewSet):
+    """Отображаем дерево комментариев"""
+    serializer_class = CommentSerializer
+    permission_classes = (IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly)
+
+    def get_queryset(self):
+        com = get_object_or_404(Comment, id=self.kwargs.get('comm_id'))
+        return Comment.objects.filter(parent_comm=com)
